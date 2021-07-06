@@ -4,21 +4,35 @@ using UnityEngine;
 
 public class PlayerShip : MonoBehaviour
 {
+    public GameObject defaultPlayerShip;
+    public GameObject playerFastBullet;
 
-    //player shot handling
-    public GameObject PlayerFastBullet;
-    //public GameObject PlayerHomeBullet;
-    //public GameObject PlayerLaserBullet;
-    int shootFastDelay = 0;
+    //player base settings
+    public float playerBaseHealth;
+    public float playerBaseSpeed;
+    public int playerCredit; //the amount of player lives
+
+    //modifier settings
+    public float playerModHealth;
+    public float playerModSpeed;
+    public float playerModDamage;
+
+    //internal modifier handling
+    float playerHealth;
+    float playerSpeed;
+
+    //shot handling
+
+    //delay handling
+    private int shootFastDelay = 0;
     public int shootFastDelayMax;
-
-    //player speed handling
-    public float playerSpeed;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        playerSpeed = playerBaseSpeed * playerModSpeed;
+        playerHealth = playerBaseHealth * playerModHealth;
+        
     }
 
     // Update is called once per frame, fixed will keep a steady frame rate
@@ -42,18 +56,24 @@ public class PlayerShip : MonoBehaviour
             transform.position = new Vector3(transform.position.x + playerSpeed, transform.position.y, transform.position.z);
         }
 
-        //shooting keys
-        //fast shot
+
+        //shot key
         if ((Input.GetKey(KeyCode.RightArrow)) && (shootFastDelay >= shootFastDelayMax))
         {
-            Instantiate(PlayerFastBullet, transform.position = new Vector3(transform.position.x, transform.position.y + 0.2f, transform.position.z), Quaternion.identity);
+            Instantiate(playerFastBullet, new Vector3(transform.position.x, transform.position.y + 0.6f, transform.position.z), transform.rotation);
             shootFastDelay = 0;
         }
-
-        //calculating delay and cooldowns
+        //fast shot delay and cooldowns
         if (shootFastDelay < shootFastDelayMax)
         {
             shootFastDelay++;
+        }
+
+
+        //check for player death
+        if (playerHealth <= 0)
+        {
+            Destroy(defaultPlayerShip);
         }
     }
 }

@@ -123,67 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &329152647
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2042886855}
-    m_Modifications:
-    - target: {fileID: 1574475777, guid: 0c0772c56df76d6418291f8f8f22ba57, type: 3}
-      propertyPath: speed
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2769204075084540668, guid: 0c0772c56df76d6418291f8f8f22ba57, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2769204075084540668, guid: 0c0772c56df76d6418291f8f8f22ba57, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 2769204075084540668, guid: 0c0772c56df76d6418291f8f8f22ba57, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2769204075084540668, guid: 0c0772c56df76d6418291f8f8f22ba57, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2769204075084540668, guid: 0c0772c56df76d6418291f8f8f22ba57, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2769204075084540668, guid: 0c0772c56df76d6418291f8f8f22ba57, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2769204075084540668, guid: 0c0772c56df76d6418291f8f8f22ba57, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2769204075084540668, guid: 0c0772c56df76d6418291f8f8f22ba57, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2769204075084540668, guid: 0c0772c56df76d6418291f8f8f22ba57, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2769204075084540668, guid: 0c0772c56df76d6418291f8f8f22ba57, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2769204075084540668, guid: 0c0772c56df76d6418291f8f8f22ba57, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4534400864295578198, guid: 0c0772c56df76d6418291f8f8f22ba57, type: 3}
-      propertyPath: m_Name
-      value: PlayerFastBullet
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0c0772c56df76d6418291f8f8f22ba57, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,9 +206,9 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &2042886855 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5304621653958479308, guid: c46cfd9a2aa34724c8fd0122eced219a, type: 3}
+--- !u!1 &1079358956 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5304621653958479310, guid: c46cfd9a2aa34724c8fd0122eced219a, type: 3}
   m_PrefabInstance: {fileID: 5304621655732631307}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5304621655732631307
@@ -288,9 +227,49 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1462511337854678497, guid: c46cfd9a2aa34724c8fd0122eced219a, type: 3}
+      propertyPath: playerCredit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462511337854678497, guid: c46cfd9a2aa34724c8fd0122eced219a, type: 3}
+      propertyPath: PlayerPosition
+      value: 
+      objectReference: {fileID: 5304621653958479308, guid: c46cfd9a2aa34724c8fd0122eced219a, type: 3}
+    - target: {fileID: 1462511337854678497, guid: c46cfd9a2aa34724c8fd0122eced219a, type: 3}
+      propertyPath: playerModSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462511337854678497, guid: c46cfd9a2aa34724c8fd0122eced219a, type: 3}
+      propertyPath: playerBaseSpeed
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462511337854678497, guid: c46cfd9a2aa34724c8fd0122eced219a, type: 3}
+      propertyPath: playerModDamage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462511337854678497, guid: c46cfd9a2aa34724c8fd0122eced219a, type: 3}
+      propertyPath: playerModHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462511337854678497, guid: c46cfd9a2aa34724c8fd0122eced219a, type: 3}
       propertyPath: PlayerFastBullet
       value: 
       objectReference: {fileID: 4534400864295578198, guid: 0c0772c56df76d6418291f8f8f22ba57, type: 3}
+    - target: {fileID: 1462511337854678497, guid: c46cfd9a2aa34724c8fd0122eced219a, type: 3}
+      propertyPath: playerBaseHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462511337854678497, guid: c46cfd9a2aa34724c8fd0122eced219a, type: 3}
+      propertyPath: prefabFastBullet
+      value: 
+      objectReference: {fileID: 2769204075084540668, guid: 0c0772c56df76d6418291f8f8f22ba57, type: 3}
+    - target: {fileID: 1462511337854678497, guid: c46cfd9a2aa34724c8fd0122eced219a, type: 3}
+      propertyPath: defaultPlayerShip
+      value: 
+      objectReference: {fileID: 1079358956}
+    - target: {fileID: 1462511337854678497, guid: c46cfd9a2aa34724c8fd0122eced219a, type: 3}
+      propertyPath: shootFastDelayMax
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5304621653958479308, guid: c46cfd9a2aa34724c8fd0122eced219a, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -313,7 +292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5304621653958479308, guid: c46cfd9a2aa34724c8fd0122eced219a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.11
       objectReference: {fileID: 0}
     - target: {fileID: 5304621653958479308, guid: c46cfd9a2aa34724c8fd0122eced219a, type: 3}
       propertyPath: m_LocalPosition.z

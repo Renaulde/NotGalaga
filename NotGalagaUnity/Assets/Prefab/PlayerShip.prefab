@@ -95,3 +95,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b970c7595bee6fe469c4aaa11eab1244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultPlayerShip: {fileID: 5304621653958479310}
+  playerFastBullet: {fileID: 4534400864295578198, guid: 0c0772c56df76d6418291f8f8f22ba57, type: 3}
+  playerBaseHealth: 1
+  playerBaseSpeed: 0.2
+  playerCredit: 1
+  playerModHealth: 1
+  playerModSpeed: 1
+  playerModDamage: 1
+  shootFastDelayMax: 4
